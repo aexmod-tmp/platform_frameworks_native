@@ -49,6 +49,11 @@ cc_library {
         "-DTRACE=0",
         "-DATRACE_TAG=ATRACE_TAG_GRAPHICS",
     ],
+    arch: {
+        arm: {
+            instruction_set: "arm",
+        },
+    },
     export_include_dirs: localIncludeFiles,
     static_libs: staticLibraries,
     shared_libs: sharedLibraries,

@@ -3,6 +3,11 @@ cc_library_static {
     srcs: [
         "src/trace.proto",
     ],
+    arch: {
+        arm: {
+            instruction_set: "arm",
+        },
+    },
     proto: {
         type: "lite",
         export_proto_headers: true,

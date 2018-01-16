@@ -78,6 +78,11 @@ cc_library_static {
         "-DGL_GLEXT_PROTOTYPES",
         "-DEGL_EGLEXT_PROTOTYPES",
     ],
+    arch: {
+        arm: {
+            instruction_set: "arm",
+        },
+    },
     shared_libs: sharedLibraries,
     whole_static_libs: staticLibraries,
     header_libs: headerLibraries,
